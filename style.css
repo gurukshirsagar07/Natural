@@ -1,108 +1,80 @@
-.mydiv
-		{
-			height:350px;
-			width:200px;
-			display:inline-block;
-		        background-color:pink;
-			border:solid;
-			margin:10px;
-			padding:10px;
-		}
-.v
-		{
-			height:150px;
-			width:200px;
-			display:inline-block;
-		    background-color:green;
-			margin:10px;
-			padding:10px;
-			color: white;
-			border: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-		}
 
-h1
-{
-height:100px;
-color:purple;
-background-color:green;
-
-}
-footer
-{
-height:50px;
-color:purple;
-background-color:green;
-}
-#H{
-height:100%;
-width:100%;
-color:red;
-}
-#lion{
-color:black;
-}
-#tiger{
-color:red;
-}
-#polar{
-color:white
-;
-}
-#para{
-color:red;
-}
-#V{
-color:green;
-}
-#G{
-color:red;
-font-size:30px;
-}
-#P{
-color:green;
-font-size:20px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-p
-{
-color:blue;
-font-size:20px;
+.bg-home { background-image: url('background.jpg'); } /* [cite: 10] */
+.bg-animal { background-image: url('back.jpg'); }     /* [cite: 80] */
+.bg-nature { background-image: url('nature.jpg'); }   /* [cite: 137] */
+
+header {
+    background-color: green;
+    padding: 20px;
+    color: white;
 }
-h2
-{
-color:blue;
+
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
 }
-.v:hover {
-  background-color: #2980b9;
-  transform: translateY(-3px); 
-  cursor: pointer;
+
+.nav-btn {
+    background-color: white;
+    border: 1px solid purple;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: purple;
+    color: white;
+}
+
+.container {
+    display: flex;         /* Stops boxes from shifting */
+    justify-content: center;
+    flex-wrap: wrap;       /* Wraps on smaller screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+.mydiv {
+    background-color: rgba(232, 245, 233, 0.9);
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.4s;      /* Smooth hover transition */
 }
 .mydiv:hover {
-  transform: scale(1.05);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
-background-color: green;
-}
-#V{
-font-size:20px;
-}
-@media(max-width:768px){
-           
-#I{
- width:300px
-}
-h1{
-font-size:40px;
-}
-p{
-font-size:30px;
-}
-#P{
-font-size:30px;
-} 
-
-	
-
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+.red-border { border-top: 8px solid red; }   /* [cite: 32] */
+.black-border { border-top: 8px solid black; } /* [cite: 40] */
 
+img {
+    border: 5px solid white;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: green;
+    color: white;
+    padding: 15px;
+}
